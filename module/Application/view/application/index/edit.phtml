@@ -1,0 +1,19 @@
+
+
+<?php
+
+$title = 'Edit User';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<form method="post" class="form-inline">
+
+    <div class="form-group">
+        Name: <input type="text" name="name" value="<?php echo $user->getName(); ?>" >
+    </div>
+
+    <div class="form-group">
+        Adress: <input type="text" name="adress" value="<?php echo $user->getAdress(); ?>" >
+    </div>
+    <input type="submit" value="Submit" class="btn btn-default">
+</form>
